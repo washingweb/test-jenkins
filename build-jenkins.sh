@@ -7,8 +7,8 @@
 
 IFS=/ read -a branch_parts <<< $GIT_BRANCH
 
-build_type=${branch_parts[0]}
-app_name=${branch_parts[1]}
+build_type=${branch_parts[1]}
+app_name=${branch_parts[2]}
 
 assets_sub_directory=/$build_type/$app_name
 
